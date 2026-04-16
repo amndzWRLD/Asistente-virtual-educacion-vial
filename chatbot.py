@@ -2,6 +2,33 @@ import json
 import re
 
 
+IDENTIDAD = {
+    "nombre": "V.I.A.L",
+    "descripcion": "Vehicular Intelligent Assistant for Learning",
+    "personalidad": "preciso, analítico y confiable",
+    "tono": "claro, directo y educativo",
+
+    "saludo_inicial": """Inicializando sistema V.I.A.L... 
+
+Hola. Soy V.I.A.L, tu asistente inteligente de educación vial.
+Estoy diseñado para ayudarte a comprender las normas de tránsito y prepararte para tu examen de manejo en Costa Rica.
+
+Puedes hacerme preguntas en cualquier momento.""",
+
+    "respuesta_intro": "Procesando consulta...\n\nResultado:",
+
+    "no_entendido": """No se encontró una coincidencia clara en la base de conocimiento.
+
+Te recomiendo reformular la pregunta o utilizar términos relacionados con normas de tránsito.""",
+
+    "despedida": """Sesión finalizada.
+
+Recuerda: una conducción segura comienza con el conocimiento.
+Éxitos en tu examen 🚦"""
+}
+
+
+
 def cargar_base_conocimiento(ruta):
     with open(ruta, "r", encoding="utf-8") as archivo:
         return json.load(archivo)
@@ -10,7 +37,7 @@ def cargar_base_conocimiento(ruta):
 
 def preprocesar_texto(texto):
     texto = texto.lower()
-    texto = re.sub(r'[^\w\s]', '', texto)  
+    texto = re.sub(r'[^\w\s]', '', texto)
     tokens = texto.split()
     return tokens
 
@@ -43,7 +70,6 @@ def calcular_coincidencia(tokens_usuario, patterns):
 
 
 
-
 def buscar_mejor_respuesta(tokens, knowledge_base):
     mejor_respuesta = None
     mayor_coincidencia = 0
@@ -66,32 +92,34 @@ def buscar_mejor_respuesta(tokens, knowledge_base):
 def generar_respuesta(intencion, respuesta_base):
 
     if intencion == "saludo":
-        return "Hola, soy tu asistente de manejo. ¿En qué puedo ayudarte?"
+        return IDENTIDAD["saludo_inicial"]
 
     if intencion == "despedida":
-        return "Con gusto, ¡hasta luego!"
+        return IDENTIDAD["despedida"]
 
     if intencion == "pregunta":
         if respuesta_base:
-            return f" Esto fue lo que encontré:\n{respuesta_base}"
+            return f"{IDENTIDAD['respuesta_intro']}\n{respuesta_base}"
         else:
-            return "No encontré información sobre eso, intenta preguntar diferente."
+            return IDENTIDAD["no_entendido"]
 
-    return "No entendí tu mensaje "
+    return IDENTIDAD["no_entendido"]
 
 
 
 def chatbot():
     knowledge_base = cargar_base_conocimiento("knowledge.json")
 
-    print("Asistente de Examen de Manejo (Costa Rica)")
-    print("Escribe 'salir' para terminar\n")
+    print(f"{IDENTIDAD['nombre']} — {IDENTIDAD['descripcion']}")
+    print(f"Modo: {IDENTIDAD['personalidad']} | Tono: {IDENTIDAD['tono']}\n")
+    print(IDENTIDAD["saludo_inicial"])
+    print("\nEscribe 'salir' para terminar\n")
 
     while True:
         usuario = input("Tú: ")
 
         if usuario.lower() == "salir":
-            print("Bot: ¡Hasta luego!")
+            print("Bot:", IDENTIDAD["despedida"])
             break
 
         tokens = preprocesar_texto(usuario)
