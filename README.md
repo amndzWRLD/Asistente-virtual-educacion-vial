@@ -35,3 +35,8 @@ El chatbot implementa un pipeline básico de procesamiento de lenguaje natural:
 ---
 
 ## 📁 Estructura del Proyecto
+Chatbot/
+│
+├── chatbot.py
+├── knowledge.json
+├── README.md
