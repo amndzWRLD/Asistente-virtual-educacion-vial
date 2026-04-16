@@ -1,0 +1,176 @@
+{
+	"señales_transito": [
+	  {
+		"patterns": [
+		  "que significa la señal de alto",
+		  "que debo hacer en un pare",
+		  "señal de detenerse",
+		  "alto transito regla"
+		],
+		"answer": "La señal de ALTO obliga a detener completamente el vehículo antes de la línea o intersección. Debes asegurarte de que no vienen otros vehículos o peatones antes de continuar."
+	  },
+	  {
+		"patterns": [
+		  "que significa ceda el paso",
+		  "cuando usar ceda",
+		  "ceder el paso como funciona",
+		  "señal triangular carretera"
+		],
+		"answer": "La señal de CEDA EL PASO indica que debes reducir la velocidad y dar prioridad a los vehículos que circulan por la vía principal."
+	  },
+	  {
+		"patterns": [
+		  "señal limite velocidad",
+		  "como identificar limite de velocidad",
+		  "que indican los numeros en señales",
+		  "velocidad maxima señal"
+		],
+		"answer": "Las señales de límite de velocidad indican la velocidad máxima permitida en kilómetros por hora. Debes respetarlas para garantizar la seguridad vial."
+	  }
+	],
+	"prioridad_paso": [
+	  {
+		"patterns": [
+		  "quien tiene prioridad en rotonda",
+		  "como funciona una rotonda",
+		  "quien pasa primero rotonda",
+		  "reglas rotondas costa rica"
+		],
+		"answer": "En una rotonda, tienen prioridad los vehículos que ya circulan dentro de ella. Los que desean ingresar deben ceder el paso."
+	  },
+	  {
+		"patterns": [
+		  "prioridad peatones",
+		  "paso peatonal reglas",
+		  "quien tiene derecho peaton",
+		  "cruce peatonal conductor"
+		],
+		"answer": "Los peatones tienen prioridad en los pasos peatonales. El conductor debe reducir la velocidad y detenerse si es necesario."
+	  },
+	  {
+		"patterns": [
+		  "interseccion sin señales",
+		  "quien pasa primero cruce",
+		  "prioridad derecha",
+		  "regla intersecciones"
+		],
+		"answer": "En intersecciones sin señalización, tiene prioridad el vehículo que viene por la derecha."
+	  }
+	],
+	"normas_circulacion": [
+	  {
+		"patterns": [
+		  "por que lado se conduce costa rica",
+		  "lado correcto carretera",
+		  "carril correcto manejar",
+		  "normas basicas conducir"
+		],
+		"answer": "En Costa Rica se conduce por el lado derecho de la vía. Siempre debes mantenerte en tu carril y respetar las señales."
+	  },
+	  {
+		"patterns": [
+		  "uso de direccionales",
+		  "cuando usar luces direccionales",
+		  "giro señalizacion",
+		  "como indicar giro"
+		],
+		"answer": "Debes usar las direccionales para indicar cualquier cambio de carril o giro. Esto permite que otros conductores anticipen tus movimientos."
+	  },
+	  {
+		"patterns": [
+		  "uso del cinturon obligatorio",
+		  "es obligatorio el cinturon",
+		  "seguridad conductor cinturon",
+		  "ley cinturon costa rica"
+		],
+		"answer": "El uso del cinturón de seguridad es obligatorio para todos los ocupantes del vehículo. Reduce significativamente el riesgo de lesiones."
+	  }
+	],
+	"limites_velocidad": [
+	  {
+		"patterns": [
+		  "velocidad maxima ciudad",
+		  "limite velocidad zona urbana",
+		  "cuanto se puede ir ciudad",
+		  "velocidad permitida calles"
+		],
+		"answer": "En zonas urbanas, el límite general de velocidad suele ser de 40 a 60 km/h, dependiendo de la señalización específica."
+	  },
+	  {
+		"patterns": [
+		  "velocidad carretera",
+		  "limite autopista costa rica",
+		  "velocidad rutas nacionales",
+		  "cuanto se puede ir autopista"
+		],
+		"answer": "En carreteras, los límites suelen ser de 80 a 100 km/h según la vía. Siempre debes respetar las señales establecidas."
+	  },
+	  {
+		"patterns": [
+		  "velocidad zona escolar",
+		  "limite escuelas",
+		  "velocidad cerca niños",
+		  "zona escolar regla"
+		],
+		"answer": "En zonas escolares, el límite suele ser de 25 km/h. Debes extremar precauciones por la presencia de niños."
+	  }
+	],
+	"conduccion_defensiva": [
+	  {
+		"patterns": [
+		  "que es conduccion defensiva",
+		  "como manejar defensivamente",
+		  "tecnicas conduccion segura",
+		  "evitar accidentes manejo"
+		],
+		"answer": "La conducción defensiva consiste en anticipar riesgos y actuar de forma preventiva para evitar accidentes, manteniendo distancia y respetando normas."
+	  },
+	  {
+		"patterns": [
+		  "distancia de seguridad",
+		  "cuanto espacio dejar carro",
+		  "regla de distancia manejo",
+		  "evitar choques por alcance"
+		],
+		"answer": "Debes mantener una distancia adecuada con el vehículo de adelante, generalmente de al menos 2 a 3 segundos, para reaccionar ante imprevistos."
+	  },
+	  {
+		"patterns": [
+		  "uso del celular conduciendo",
+		  "puedo usar telefono manejando",
+		  "ley celular conductor",
+		  "riesgos celular volante"
+		],
+		"answer": "No debes usar el celular mientras conduces. Es una de las principales causas de accidentes por distracción."
+	  }
+	],
+	"seguridad_vial": [
+	  {
+		"patterns": [
+		  "que es seguridad vial",
+		  "importancia seguridad carretera",
+		  "por que respetar normas transito",
+		  "seguridad en conduccion"
+		],
+		"answer": "La seguridad vial busca prevenir accidentes y proteger la vida de todos los usuarios de la vía mediante el cumplimiento de normas."
+	  },
+	  {
+		"patterns": [
+		  "alcohol y conducir",
+		  "puedo manejar con alcohol",
+		  "limite alcohol conductor",
+		  "riesgos conducir ebrio"
+		],
+		"answer": "Conducir bajo efectos del alcohol está prohibido y es altamente peligroso. Reduce reflejos y aumenta el riesgo de accidentes."
+	  },
+	  {
+		"patterns": [
+		  "luces del vehiculo cuando usar",
+		  "uso de luces noche",
+		  "luces en lluvia",
+		  "cuando encender luces"
+		],
+		"answer": "Debes usar las luces del vehículo en la noche, lluvia o poca visibilidad para ver y ser visto por otros conductores."
+	  }
+	]
+  }
