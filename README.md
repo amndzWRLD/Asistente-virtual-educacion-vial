@@ -12,8 +12,12 @@ El sistema responde preguntas relacionadas con:
 
 ---
 
-## 🧠 Funcionamiento del Sistema
+## 🎯 Objetivo académico
+Desarrollar un sistema capaz de interpretar preguntas del usuario y responder utilizando una base de conocimiento estructurada.
 
+---
+
+## 🧠 Funcionamiento del Sistema
 El chatbot implementa un pipeline básico de procesamiento de lenguaje natural:
 
 1. **Preprocesamiento**
@@ -31,6 +35,13 @@ El chatbot implementa un pipeline básico de procesamiento de lenguaje natural:
 
 4. **Generación de respuesta**
    - Respuesta dinámica basada en la intención
+
+---
+
+## 🛠️ Tecnologías utilizadas
+   -Python
+   -JSON
+   -Procesamiento de lenguaje natural básico
 
 ---
 
